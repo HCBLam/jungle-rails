@@ -32,17 +32,17 @@
       <ul class="nav navbar-nav navbar-right">
       <% if current_user %>
       <li>
-      Signed in as <%= current_user.first_name %>
+        Signed in as <%= current_user.first_name %>
       </li>
       <li>
-      <%= link_to 'Logout', '/logout' %>
+        <%= link_to 'Logout', '/logout' %>
       </li>
-      <% else %>
+        <% else %>
       <li>
-      <%= link_to 'Register', '/register' %>
+        <%= link_to 'Register', '/register' %>
       </li>
       <li>
-      <%= link_to 'Login', '/login' %>
+        <%= link_to 'Login', '/login' %>
       </li>
       <% end %>
        <li class="dropdown">
