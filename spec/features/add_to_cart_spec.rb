@@ -20,7 +20,7 @@ RSpec.feature "Visitor can click the 'Add to Cart' button", type: :feature, js: 
   scenario "The cart count will increase by one" do
     # ACT
     visit root_path
-    expect(page).to have_css 'article.product', count: 10
+    expect(page).to have_text 'My Cart (0)', count: 1
 
     click_on('Add', match: :first)
 
