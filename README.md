@@ -1,7 +1,26 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+**Jungle** is a mini e-commerce application built with **Rails 4.2** for purposes of teaching Rails by example.
+It was tested using **RSpec**, **Capybara**, **Poltergeist**, and **Database Cleaner**.
 
+---
+### Browse all products.
+![Jungle](public/docs/jungle1_home.png)
+### Browse products by categories.
+![Jungle](public/docs/jungle2_categories.png)
+### Admin can keep track of products.
+![Jungle](public/docs/jungle3_admin_prod.png)
+### Admin can add new products.
+![Jungle](public/docs/jungle4_admin_add_new.png)
+### The checkout cart.
+![Jungle](public/docs/jungle5_cart.png)
+### The order confirmation.
+![Jungle](public/docs/jungle6_order.png)
+
+
+
+
+---
 ## Additional Steps for Apple M1 Machines
 
 1. Make sure that you are runnning Ruby 2.6.6 (`ruby -v`)

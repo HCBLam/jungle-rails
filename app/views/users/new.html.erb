@@ -2,39 +2,29 @@
 
 <%= form_for :user, url: '/users' do |f| %>
 
-  First Name: <%= f.text_field :first_name %>
-  Last Name: <%= f.text_field :last_name %>
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
-  Password Confirmation: <%= f.password_field :password_confirmation %>
-  <%= f.submit "Submit" %>
+    <div class="form-group">
+      <%= f.label :first_name, 'First Name' %>
+      <%= f.text_field :first_name, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :last_name, 'Last Name' %>
+      <%= f.text_field :last_name, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :email, 'Email' %>
+      <%= f.text_field :email, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :password, 'Password' %>
+      <%= f.password_field :password, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :password_confirmation, 'Passowrd' %>
+      <%= f.password_field :password_confirmation, class: 'form-control' %>
+    </div>
+    <%= f.submit "Submit", class:"btn btn-primary" %>
 
-  <% end %>
+<% end %>
 
-
-
-<form>
-  <div class="form-group">
-    <label for="first_name">First Name</label>
-    <input type="text_field" class="form-control" name="first_name" placeholder="First Name">
-  </div>
-  <div class="form-group">
-    <label for="last_name">Last Name</label>
-    <input type="text_field" class="form-control" name="last_name" placeholder="Last Name">
-  </div>
-  <div class="form-group">
-    <label for="email">Email Address</label>
-    <input type="email" class="form-control" name="email" placeholder="Enter email">
-  </div>
-  <div class="form-group">
-    <label for="password">Password</label>
-    <input type="password" class="form-control" name="password" placeholder="Password">
-  </div>
-  <div class="form-group">
-  <label for="password_confirmation">Password Confirmation</label>
-  <input type="password" class="form-control" name="password_confirmation" placeholder="Enter password again">
-</div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
 
 
